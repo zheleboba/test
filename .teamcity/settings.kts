@@ -1,5 +1,7 @@
 import jetbrains.buildServer.configs.kotlin.v2018_2.*
-
+import jetbrains.buildServer.configs.kotlin.v2018_2.BuildType
+import jetbrains.buildServer.configs.kotlin.v2018_2.buildSteps.script
+import jetbrains.buildServer.configs.kotlin.v2018_2.ui.*
 /*
 The settings script is an entry point for defining a TeamCity
 project hierarchy. The script should contain a single call to the
@@ -25,4 +27,18 @@ To debug in IntelliJ Idea, open the 'Maven Projects' tool window (View
 version = "2018.2"
 
 project {
+    BuildType({
+        id("Build")
+        name = "build"
+
+        steps {
+            script {
+                scriptContent = """
+                    #!/bin/bash
+
+                    env
+                """.trimIndent()
+            }
+        }
+    })
 }
