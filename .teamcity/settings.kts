@@ -33,10 +33,20 @@ project {
 
         steps {
             script {
+                name="getEnv"
                 scriptContent = """
                     #!/bin/bash
 
                     env
+                """.trimIndent()
+            }
+            script{
+                name="echoDate"
+                scriptContent="""
+                    #!/bin/bash
+
+                    date
+
                 """.trimIndent()
             }
         }
