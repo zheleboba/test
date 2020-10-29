@@ -9,6 +9,15 @@ jobs:
       - run:
           name: Test
           command: echo 'helo there!'
+  other:
+    working_directory: ~/code
+    docker:
+      - image: circleci/node:12.16
+    steps:
+      - checkout
+      - run:
+          name: Date
+          command: date
 workflows:
   version: 2
   sample-run:
@@ -18,3 +27,11 @@ workflows:
             branches:
               ignore:
                 - develop
+  other-run:
+    jobs:
+      - sample:
+          filters:
+            branches:
+              ignore:
+                - develop
+      - other
