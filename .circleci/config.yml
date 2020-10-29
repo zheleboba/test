@@ -12,8 +12,8 @@ jobs:
 workflows:
   sample-run:
     jobs:
-      - sample
-          filters:
-            branches:
-              ignore:
-                - develop
+    - sample:
+      filters:
+        branches:
+          ignore:
+          - develop
