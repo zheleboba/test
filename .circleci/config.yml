@@ -10,6 +10,7 @@ jobs:
           name: Test
           command: echo 'helo there!'
 workflows:
+  version: 2
   sample-run:
     jobs:
       - sample:
