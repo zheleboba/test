@@ -7,7 +7,7 @@ jobs:
     steps:
       - checkout
       - run:
-          name: Test
+          name: Test temp
           command: echo 'helo there!'
 workflows:
   version: 2
