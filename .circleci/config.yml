@@ -6,7 +6,7 @@ jobs:
       - image: circleci/node:12.16
     steps:
       - checkout
-      - run:
+      - run: 
           name: Test
           command: echo 'helo there!' 
   other:
