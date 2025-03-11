@@ -16,7 +16,7 @@ jobs:
     steps:
       - checkout
       - run:
-          name: Date
+          name: Date 
           command: date
 workflows:
   version: 2
