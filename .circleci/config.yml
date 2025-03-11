@@ -8,7 +8,7 @@ jobs:
       - checkout
       - run:
           name: Test
-          command: echo 'helo there!'
+          command: echo 'helo there!' 
   other:
     working_directory: ~/code
     docker:
