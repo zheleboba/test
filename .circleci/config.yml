@@ -12,7 +12,7 @@ jobs:
   other:
     working_directory: ~/code
     docker:
-      - image: circleci/node:12.16
+      - image: circleci/node:12.16 
     steps:
       - checkout
       - run:
