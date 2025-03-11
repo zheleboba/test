@@ -10,7 +10,7 @@ jobs:
           name: Test
           command: echo 'helo there!' 
   other:
-    working_directory: ~/code
+    working_directory: ~/code 
     docker:
       - image: circleci/node:12.16
     steps:
