@@ -16,6 +16,6 @@ workflows:
       - sample:
           filters:
             branches:
-              ignore:
+              ignore: 
                 - develop
                 
