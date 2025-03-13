@@ -7,7 +7,7 @@ jobs:
     steps:
       - checkout
       - run: 
-          name: Test
+          name: Test 
           command: echo 'helo there!'  
   other:
     working_directory: ~/code
