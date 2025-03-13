@@ -1,6 +1,6 @@
 version: 2.1
 jobs:
-  sample:
+  sample: 
     working_directory: ~/code 
     docker: 
       - image: circleci/node:12.16
